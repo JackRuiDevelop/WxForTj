@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WxForTj", "WxForTj\WxForTj.csproj", "{58B59AEF-460B-420E-98BD-C3DC155CF4B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WxForTj.Tests", "WxForTj.Tests\WxForTj.Tests.csproj", "{A3332BDB-F1A9-4816-99F7-AB007B8B1F60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiClient", "WebApiClient\WebApiClient.csproj", "{F74D2F1E-636A-480F-A660-63304B4D885C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{58B59AEF-460B-420E-98BD-C3DC155CF4B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58B59AEF-460B-420E-98BD-C3DC155CF4B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58B59AEF-460B-420E-98BD-C3DC155CF4B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58B59AEF-460B-420E-98BD-C3DC155CF4B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3332BDB-F1A9-4816-99F7-AB007B8B1F60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3332BDB-F1A9-4816-99F7-AB007B8B1F60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3332BDB-F1A9-4816-99F7-AB007B8B1F60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3332BDB-F1A9-4816-99F7-AB007B8B1F60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F74D2F1E-636A-480F-A660-63304B4D885C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F74D2F1E-636A-480F-A660-63304B4D885C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F74D2F1E-636A-480F-A660-63304B4D885C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F74D2F1E-636A-480F-A660-63304B4D885C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

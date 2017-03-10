@@ -1,0 +1,544 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Medical_LiShuiModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="TiJianB">
+          <Key>
+            <PropertyRef Name="TiJianLSH" />
+          </Key>
+          <Property Name="TiJianLSH" Type="varchar" MaxLength="16" Nullable="false" />
+          <Property Name="YuYueLSH" Type="varchar" MaxLength="16" />
+          <Property Name="TiJianH" Type="varchar" MaxLength="18" />
+          <Property Name="GuiDangH" Type="varchar" MaxLength="20" />
+          <Property Name="CiKaLBBM" Type="varchar" MaxLength="6" />
+          <Property Name="CiKaLBMC" Type="varchar" MaxLength="20" />
+          <Property Name="XingMing" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="XingBie" Type="varchar" MaxLength="4" />
+          <Property Name="NianLing" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="ChuShenRQ" Type="varchar" MaxLength="20" />
+          <Property Name="HunYinZK" Type="varchar" MaxLength="10" />
+          <Property Name="YouXiaoZJ" Type="varchar" MaxLength="30" />
+          <Property Name="LianXiDH" Type="varchar" MaxLength="50" />
+          <Property Name="WenHuanCD" Type="varchar" MaxLength="50" />
+          <Property Name="JiGuan" Type="varchar" MaxLength="50" />
+          <Property Name="JiaTingDZ" Type="varchar" MaxLength="500" />
+          <Property Name="MinZu" Type="varchar" MaxLength="50" />
+          <Property Name="GongZuoDW" Type="varchar" MaxLength="50" />
+          <Property Name="ZhiYe" Type="varchar" MaxLength="50" />
+          <Property Name="DianZiYJ" Type="varchar" MaxLength="50" />
+          <Property Name="BeiZhu" Type="varchar" MaxLength="100" />
+          <Property Name="ZongGongL" Type="varchar" MaxLength="50" />
+          <Property Name="WaiBuGH" Type="varchar" MaxLength="50" />
+          <Property Name="BeiYong1" Type="varchar" MaxLength="50" />
+          <Property Name="BeiYong2" Type="varchar" MaxLength="50" />
+          <Property Name="WeiHaiYS" Type="varchar" MaxLength="50" />
+          <Property Name="ZaiGangLX" Type="varchar" MaxLength="50" />
+          <Property Name="JieHaiGL" Type="varchar" MaxLength="50" />
+          <Property Name="YuJianRQ" Type="varchar" MaxLength="50" />
+          <Property Name="BuMen" Type="varchar" MaxLength="50" />
+          <Property Name="ZaiZhiQK" Type="varchar" MaxLength="50" />
+          <Property Name="FuKeBZ" Type="varchar" MaxLength="50" />
+          <Property Name="FenZu" Type="varchar" MaxLength="50" />
+          <Property Name="TiJianLB" Type="varchar" MaxLength="50" />
+          <Property Name="JianChaLXBM" Type="varchar" MaxLength="50" />
+          <Property Name="JianChaLXMC" Type="varchar" MaxLength="50" />
+          <Property Name="ZhiYeBDXBM" Type="varchar" MaxLength="50" />
+          <Property Name="ZhiYeBDXMC" Type="varchar" MaxLength="50" />
+          <Property Name="YuDingTJRQ" Type="varchar" MaxLength="50" />
+          <Property Name="FenZuMC" Type="varchar" MaxLength="50" />
+          <Property Name="TiJianRQ" Type="varchar" MaxLength="10" />
+          <Property Name="DengJiRQ" Type="varchar" MaxLength="20" />
+          <Property Name="JieDaiGH" Type="varchar" MaxLength="20" />
+          <Property Name="JieDaiXM" Type="varchar" MaxLength="20" />
+          <Property Name="DanWeiBM" Type="varchar" MaxLength="10" />
+          <Property Name="DanWeiMC" Type="varchar" MaxLength="50" />
+          <Property Name="TaoCanBM" Type="varchar" MaxLength="6" />
+          <Property Name="TaoCanMC" Type="varchar" MaxLength="50" />
+          <Property Name="TaoCanMC_N" Type="varchar" MaxLength="50" />
+          <Property Name="DanWeiTCBM" Type="varchar" MaxLength="10" />
+          <Property Name="DanWeiTCMC" Type="varchar" MaxLength="100" />
+          <Property Name="TaoCanJE" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="ZheKouL" Type="decimal" Precision="18" Scale="5" />
+          <Property Name="TaoCanZK" Type="decimal" Precision="18" Scale="5" />
+          <Property Name="YingFuJE" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="ZongJinE" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="TiJianJSRGH" Type="varchar" MaxLength="20" />
+          <Property Name="TiJianJSRXM" Type="varchar" MaxLength="20" />
+          <Property Name="ShiFouZJHZ" Type="varchar" MaxLength="2" />
+          <Property Name="ZhuSuTS" Type="varchar" MaxLength="150" />
+          <Property Name="ShiFouYZJ" Type="varchar" MaxLength="150" />
+          <Property Name="ChuangWeiH" Type="varchar" MaxLength="150" />
+          <Property Name="DaYinBZ" Type="varchar" MaxLength="20" />
+          <Property Name="ZongJianYSGH" Type="varchar" MaxLength="20" />
+          <Property Name="ZongJianYSXM" Type="varchar" MaxLength="20" />
+          <Property Name="ZongJianRQ" Type="varchar" MaxLength="20" />
+          <Property Name="ZongJie" Type="varchar" MaxLength="3500" />
+          <Property Name="ZhenDuan" Type="varchar" MaxLength="1000" />
+          <Property Name="YiShengJY" Type="varchar" MaxLength="5000" />
+          <Property Name="MiaoShuJQ" Type="varchar" MaxLength="5000" />
+          <Property Name="FuJianRQ" Type="varchar" MaxLength="250" />
+          <Property Name="FuJianTZRQ" Type="varchar" MaxLength="10" />
+          <Property Name="FuJianYY" Type="varchar" MaxLength="500" />
+          <Property Name="BiaoZhi" Type="varchar" MaxLength="10" />
+          <Property Name="Statue" Type="int" />
+          <Property Name="FaBaoGRQ" Type="varchar" MaxLength="20" />
+          <Property Name="FaBaoGFS" Type="varchar" MaxLength="20" />
+          <Property Name="JieSuanBH" Type="varchar" MaxLength="20" />
+          <Property Name="JieSuanRQ" Type="varchar" MaxLength="20" />
+          <Property Name="JieSuanBZ" Type="varchar" MaxLength="10" />
+          <Property Name="ShiFouFF" Type="varchar" MaxLength="10" />
+          <Property Name="FuFeiRQ" Type="varchar" MaxLength="20" />
+          <Property Name="XiuGaiBZ" Type="decimal" Precision="1" Scale="0" />
+          <Property Name="ShenGao" Type="varchar" MaxLength="50" />
+          <Property Name="TiZhong" Type="varchar" MaxLength="50" />
+          <Property Name="XueYa" Type="varchar" MaxLength="50" />
+          <Property Name="MaiBo" Type="varchar" MaxLength="50" />
+          <Property Name="QueRenRQ" Type="varchar" MaxLength="10" />
+          <Property Name="QuerenR" Type="varchar" MaxLength="20" />
+          <Property Name="CaoZuoYGH" Type="varchar" MaxLength="20" />
+          <Property Name="CaoZuoYXM" Type="varchar" MaxLength="50" />
+          <Property Name="ShenHeYSGH" Type="varchar" MaxLength="20" />
+          <Property Name="ShenHeYSXM" Type="varchar" MaxLength="20" />
+          <Property Name="LeiBieBM" Type="varchar" MaxLength="6" />
+          <Property Name="LeiBieMC" Type="varchar" MaxLength="50" />
+          <Property Name="ZYB_JieGuo" Type="varchar" MaxLength="500" />
+          <Property Name="ZYB_YiJian" Type="varchar" MaxLength="500" />
+          <Property Name="ZYB_JianYi" Type="varchar" MaxLength="5000" />
+          <Property Name="ZYB_DingXing" Type="varchar" MaxLength="500" />
+          <Property Name="ZYB_ZhenDuan" Type="varchar" MaxLength="2000" />
+          <Property Name="ShanChuBZ" Type="int" />
+          <Property Name="Image" Type="image" />
+          <Property Name="ClientEdit" Type="varchar" MaxLength="50" />
+          <Property Name="CheckBZ" Type="int" />
+          <Property Name="SCBH" Type="varchar" MaxLength="50" />
+          <Property Name="FuJianH" Type="varchar" MaxLength="50" />
+          <Property Name="FuJianXM" Type="varchar" MaxLength="500" />
+          <Property Name="renyuanlsh" Type="int" />
+          <Property Name="FenPeiBZ" Type="varchar" MaxLength="50" />
+          <Property Name="XingMing_ENG" Type="varchar" MaxLength="50" />
+          <Property Name="ZhengJianLX" Type="varchar" MaxLength="50" />
+          <Property Name="GuoJi" Type="varchar" MaxLength="50" />
+          <Property Name="QianWangGJ" Type="varchar" MaxLength="50" />
+          <Property Name="JieZhongXMJE" Type="numeric" Precision="18" Scale="4" />
+          <Property Name="TiJianCS" Type="int" />
+          <Property Name="JingNW" Type="varchar" MaxLength="50" />
+          <Property Name="FaZhengJG" Type="varchar" MaxLength="50" />
+          <Property Name="TiJianJL" Type="varchar" MaxLength="500" />
+          <Property Name="ChuRuJLX" Type="varchar" MaxLength="50" />
+          <Property Name="ChuShengD" Type="varchar" MaxLength="50" />
+          <Property Name="TMJCDSFYDY" Type="varchar" MaxLength="20" />
+          <Property Name="TMJCDDYSJ" Type="varchar" MaxLength="20" />
+          <Property Name="TMJCDDYRY" Type="varchar" MaxLength="20" />
+          <Property Name="ZYB_QiTaJG" Type="varchar" MaxLength="2000" />
+          <Property Name="BaoGaoDYCS" Type="int" />
+          <Property Name="BaoGaoJJBZ" Type="varchar" MaxLength="50" />
+          <Property Name="JiaoJieZT" Type="varchar" MaxLength="50" />
+          <Property Name="selfkey" Type="varchar" MaxLength="50" />
+          <Property Name="ZengJiaZKHJE" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="ZengJiaJE" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="TaoCanZKHJE" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="TaoCanZJE" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="ZuiHouXGRQ" Type="varchar" MaxLength="50" />
+          <Property Name="ZuiHouXGGH" Type="varchar" MaxLength="50" />
+          <Property Name="ZuiHouXGXM" Type="varchar" MaxLength="50" />
+          <Property Name="SFSFHDY" Type="varchar" MaxLength="6" />
+          <Property Name="GeRenJSZT" Type="int" />
+          <Property Name="DW_JSZT" Type="int" />
+          <Property Name="JieSuanJE_GR" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="JieSuanJE_DW" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="JieSuanBH_GR" Type="varchar" MaxLength="20" />
+          <Property Name="JieSuanBH_DW" Type="varchar" MaxLength="20" />
+          <Property Name="TJDYDSFYDY" Type="varchar" MaxLength="20" />
+          <Property Name="TJDYDDYSJ" Type="varchar" MaxLength="20" />
+          <Property Name="TJDYDDYRY" Type="varchar" MaxLength="20" />
+          <Property Name="DanWeiDE" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="JieSuanRQ_GR" Type="varchar" MaxLength="20" />
+          <Property Name="JieSuanRQ_DW" Type="varchar" MaxLength="20" />
+          <Property Name="WFJE_GR" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="WFJE_DW" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="YFJE_GR" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="YFJE_DW" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="LaiJianRQ" Type="varchar" MaxLength="20" />
+          <Property Name="BCZFBZ" Type="varchar" MaxLength="20" />
+          <Property Name="ChoseTJ" Type="int" />
+          <Property Name="YangXingBZ" Type="int" Nullable="false" />
+          <Property Name="teshusx" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="teshubz" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="GRJSJE" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="DWJSJE" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="Medical_LiShuiModelStoreContainer">
+          <EntitySet Name="TiJianB" EntityType="Self.TiJianB" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Medical_LiShuiModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="TiJianB">
+          <Key>
+            <PropertyRef Name="TiJianLSH" />
+          </Key>
+          <Property Name="TiJianLSH" Type="String" MaxLength="16" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="YuYueLSH" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+          <Property Name="TiJianH" Type="String" MaxLength="18" FixedLength="false" Unicode="false" />
+          <Property Name="GuiDangH" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="CiKaLBBM" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Name="CiKaLBMC" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="XingMing" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="XingBie" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+          <Property Name="NianLing" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="ChuShenRQ" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="HunYinZK" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="YouXiaoZJ" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="LianXiDH" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="WenHuanCD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="JiGuan" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="JiaTingDZ" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="MinZu" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="GongZuoDW" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ZhiYe" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="DianZiYJ" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="BeiZhu" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="ZongGongL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="WaiBuGH" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="BeiYong1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="BeiYong2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="WeiHaiYS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ZaiGangLX" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="JieHaiGL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="YuJianRQ" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="BuMen" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ZaiZhiQK" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FuKeBZ" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FenZu" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="TiJianLB" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="JianChaLXBM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="JianChaLXMC" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ZhiYeBDXBM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ZhiYeBDXMC" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="YuDingTJRQ" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FenZuMC" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="TiJianRQ" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="DengJiRQ" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="JieDaiGH" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="JieDaiXM" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="DanWeiBM" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="DanWeiMC" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="TaoCanBM" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Name="TaoCanMC" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="TaoCanMC_N" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="DanWeiTCBM" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="DanWeiTCMC" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="TaoCanJE" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="ZheKouL" Type="Decimal" Precision="18" Scale="5" />
+          <Property Name="TaoCanZK" Type="Decimal" Precision="18" Scale="5" />
+          <Property Name="YingFuJE" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="ZongJinE" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="TiJianJSRGH" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="TiJianJSRXM" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="ShiFouZJHZ" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="ZhuSuTS" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="ShiFouYZJ" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="ChuangWeiH" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="DaYinBZ" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="ZongJianYSGH" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="ZongJianYSXM" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="ZongJianRQ" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="ZongJie" Type="String" MaxLength="3500" FixedLength="false" Unicode="false" />
+          <Property Name="ZhenDuan" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="YiShengJY" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" />
+          <Property Name="MiaoShuJQ" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" />
+          <Property Name="FuJianRQ" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="FuJianTZRQ" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="FuJianYY" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="BiaoZhi" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Statue" Type="Int32" />
+          <Property Name="FaBaoGRQ" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="FaBaoGFS" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="JieSuanBH" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="JieSuanRQ" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="JieSuanBZ" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="ShiFouFF" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="FuFeiRQ" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="XiuGaiBZ" Type="Decimal" Precision="1" Scale="0" />
+          <Property Name="ShenGao" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="TiZhong" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="XueYa" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="MaiBo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="QueRenRQ" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="QuerenR" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="CaoZuoYGH" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="CaoZuoYXM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ShenHeYSGH" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="ShenHeYSXM" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="LeiBieBM" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Name="LeiBieMC" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ZYB_JieGuo" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="ZYB_YiJian" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="ZYB_JianYi" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" />
+          <Property Name="ZYB_DingXing" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="ZYB_ZhenDuan" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+          <Property Name="ShanChuBZ" Type="Int32" />
+          <Property Name="Image" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="ClientEdit" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CheckBZ" Type="Int32" />
+          <Property Name="SCBH" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FuJianH" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FuJianXM" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="renyuanlsh" Type="Int32" />
+          <Property Name="FenPeiBZ" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="XingMing_ENG" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ZhengJianLX" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="GuoJi" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="QianWangGJ" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="JieZhongXMJE" Type="Decimal" Precision="18" Scale="4" />
+          <Property Name="TiJianCS" Type="Int32" />
+          <Property Name="JingNW" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FaZhengJG" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="TiJianJL" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="ChuRuJLX" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ChuShengD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="TMJCDSFYDY" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="TMJCDDYSJ" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="TMJCDDYRY" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="ZYB_QiTaJG" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+          <Property Name="BaoGaoDYCS" Type="Int32" />
+          <Property Name="BaoGaoJJBZ" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="JiaoJieZT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="selfkey" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ZengJiaZKHJE" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="ZengJiaJE" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="TaoCanZKHJE" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="TaoCanZJE" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="ZuiHouXGRQ" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ZuiHouXGGH" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ZuiHouXGXM" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="SFSFHDY" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Name="GeRenJSZT" Type="Int32" />
+          <Property Name="DW_JSZT" Type="Int32" />
+          <Property Name="JieSuanJE_GR" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="JieSuanJE_DW" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="JieSuanBH_GR" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="JieSuanBH_DW" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="TJDYDSFYDY" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="TJDYDDYSJ" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="TJDYDDYRY" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="DanWeiDE" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="JieSuanRQ_GR" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="JieSuanRQ_DW" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="WFJE_GR" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="WFJE_DW" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="YFJE_GR" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="YFJE_DW" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="LaiJianRQ" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="BCZFBZ" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="ChoseTJ" Type="Int32" />
+          <Property Name="YangXingBZ" Type="Int32" Nullable="false" />
+          <Property Name="teshusx" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="teshubz" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="GRJSJE" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="DWJSJE" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="Medical_LiShuiEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="TiJianB" EntityType="Self.TiJianB" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Medical_LiShuiModelStoreContainer" CdmEntityContainer="Medical_LiShuiEntities">
+          <EntitySetMapping Name="TiJianB">
+            <EntityTypeMapping TypeName="Medical_LiShuiModel.TiJianB">
+              <MappingFragment StoreEntitySet="TiJianB">
+                <ScalarProperty Name="TiJianLSH" ColumnName="TiJianLSH" />
+                <ScalarProperty Name="YuYueLSH" ColumnName="YuYueLSH" />
+                <ScalarProperty Name="TiJianH" ColumnName="TiJianH" />
+                <ScalarProperty Name="GuiDangH" ColumnName="GuiDangH" />
+                <ScalarProperty Name="CiKaLBBM" ColumnName="CiKaLBBM" />
+                <ScalarProperty Name="CiKaLBMC" ColumnName="CiKaLBMC" />
+                <ScalarProperty Name="XingMing" ColumnName="XingMing" />
+                <ScalarProperty Name="XingBie" ColumnName="XingBie" />
+                <ScalarProperty Name="NianLing" ColumnName="NianLing" />
+                <ScalarProperty Name="ChuShenRQ" ColumnName="ChuShenRQ" />
+                <ScalarProperty Name="HunYinZK" ColumnName="HunYinZK" />
+                <ScalarProperty Name="YouXiaoZJ" ColumnName="YouXiaoZJ" />
+                <ScalarProperty Name="LianXiDH" ColumnName="LianXiDH" />
+                <ScalarProperty Name="WenHuanCD" ColumnName="WenHuanCD" />
+                <ScalarProperty Name="JiGuan" ColumnName="JiGuan" />
+                <ScalarProperty Name="JiaTingDZ" ColumnName="JiaTingDZ" />
+                <ScalarProperty Name="MinZu" ColumnName="MinZu" />
+                <ScalarProperty Name="GongZuoDW" ColumnName="GongZuoDW" />
+                <ScalarProperty Name="ZhiYe" ColumnName="ZhiYe" />
+                <ScalarProperty Name="DianZiYJ" ColumnName="DianZiYJ" />
+                <ScalarProperty Name="BeiZhu" ColumnName="BeiZhu" />
+                <ScalarProperty Name="ZongGongL" ColumnName="ZongGongL" />
+                <ScalarProperty Name="WaiBuGH" ColumnName="WaiBuGH" />
+                <ScalarProperty Name="BeiYong1" ColumnName="BeiYong1" />
+                <ScalarProperty Name="BeiYong2" ColumnName="BeiYong2" />
+                <ScalarProperty Name="WeiHaiYS" ColumnName="WeiHaiYS" />
+                <ScalarProperty Name="ZaiGangLX" ColumnName="ZaiGangLX" />
+                <ScalarProperty Name="JieHaiGL" ColumnName="JieHaiGL" />
+                <ScalarProperty Name="YuJianRQ" ColumnName="YuJianRQ" />
+                <ScalarProperty Name="BuMen" ColumnName="BuMen" />
+                <ScalarProperty Name="ZaiZhiQK" ColumnName="ZaiZhiQK" />
+                <ScalarProperty Name="FuKeBZ" ColumnName="FuKeBZ" />
+                <ScalarProperty Name="FenZu" ColumnName="FenZu" />
+                <ScalarProperty Name="TiJianLB" ColumnName="TiJianLB" />
+                <ScalarProperty Name="JianChaLXBM" ColumnName="JianChaLXBM" />
+                <ScalarProperty Name="JianChaLXMC" ColumnName="JianChaLXMC" />
+                <ScalarProperty Name="ZhiYeBDXBM" ColumnName="ZhiYeBDXBM" />
+                <ScalarProperty Name="ZhiYeBDXMC" ColumnName="ZhiYeBDXMC" />
+                <ScalarProperty Name="YuDingTJRQ" ColumnName="YuDingTJRQ" />
+                <ScalarProperty Name="FenZuMC" ColumnName="FenZuMC" />
+                <ScalarProperty Name="TiJianRQ" ColumnName="TiJianRQ" />
+                <ScalarProperty Name="DengJiRQ" ColumnName="DengJiRQ" />
+                <ScalarProperty Name="JieDaiGH" ColumnName="JieDaiGH" />
+                <ScalarProperty Name="JieDaiXM" ColumnName="JieDaiXM" />
+                <ScalarProperty Name="DanWeiBM" ColumnName="DanWeiBM" />
+                <ScalarProperty Name="DanWeiMC" ColumnName="DanWeiMC" />
+                <ScalarProperty Name="TaoCanBM" ColumnName="TaoCanBM" />
+                <ScalarProperty Name="TaoCanMC" ColumnName="TaoCanMC" />
+                <ScalarProperty Name="TaoCanMC_N" ColumnName="TaoCanMC_N" />
+                <ScalarProperty Name="DanWeiTCBM" ColumnName="DanWeiTCBM" />
+                <ScalarProperty Name="DanWeiTCMC" ColumnName="DanWeiTCMC" />
+                <ScalarProperty Name="TaoCanJE" ColumnName="TaoCanJE" />
+                <ScalarProperty Name="ZheKouL" ColumnName="ZheKouL" />
+                <ScalarProperty Name="TaoCanZK" ColumnName="TaoCanZK" />
+                <ScalarProperty Name="YingFuJE" ColumnName="YingFuJE" />
+                <ScalarProperty Name="ZongJinE" ColumnName="ZongJinE" />
+                <ScalarProperty Name="TiJianJSRGH" ColumnName="TiJianJSRGH" />
+                <ScalarProperty Name="TiJianJSRXM" ColumnName="TiJianJSRXM" />
+                <ScalarProperty Name="ShiFouZJHZ" ColumnName="ShiFouZJHZ" />
+                <ScalarProperty Name="ZhuSuTS" ColumnName="ZhuSuTS" />
+                <ScalarProperty Name="ShiFouYZJ" ColumnName="ShiFouYZJ" />
+                <ScalarProperty Name="ChuangWeiH" ColumnName="ChuangWeiH" />
+                <ScalarProperty Name="DaYinBZ" ColumnName="DaYinBZ" />
+                <ScalarProperty Name="ZongJianYSGH" ColumnName="ZongJianYSGH" />
+                <ScalarProperty Name="ZongJianYSXM" ColumnName="ZongJianYSXM" />
+                <ScalarProperty Name="ZongJianRQ" ColumnName="ZongJianRQ" />
+                <ScalarProperty Name="ZongJie" ColumnName="ZongJie" />
+                <ScalarProperty Name="ZhenDuan" ColumnName="ZhenDuan" />
+                <ScalarProperty Name="YiShengJY" ColumnName="YiShengJY" />
+                <ScalarProperty Name="MiaoShuJQ" ColumnName="MiaoShuJQ" />
+                <ScalarProperty Name="FuJianRQ" ColumnName="FuJianRQ" />
+                <ScalarProperty Name="FuJianTZRQ" ColumnName="FuJianTZRQ" />
+                <ScalarProperty Name="FuJianYY" ColumnName="FuJianYY" />
+                <ScalarProperty Name="BiaoZhi" ColumnName="BiaoZhi" />
+                <ScalarProperty Name="Statue" ColumnName="Statue" />
+                <ScalarProperty Name="FaBaoGRQ" ColumnName="FaBaoGRQ" />
+                <ScalarProperty Name="FaBaoGFS" ColumnName="FaBaoGFS" />
+                <ScalarProperty Name="JieSuanBH" ColumnName="JieSuanBH" />
+                <ScalarProperty Name="JieSuanRQ" ColumnName="JieSuanRQ" />
+                <ScalarProperty Name="JieSuanBZ" ColumnName="JieSuanBZ" />
+                <ScalarProperty Name="ShiFouFF" ColumnName="ShiFouFF" />
+                <ScalarProperty Name="FuFeiRQ" ColumnName="FuFeiRQ" />
+                <ScalarProperty Name="XiuGaiBZ" ColumnName="XiuGaiBZ" />
+                <ScalarProperty Name="ShenGao" ColumnName="ShenGao" />
+                <ScalarProperty Name="TiZhong" ColumnName="TiZhong" />
+                <ScalarProperty Name="XueYa" ColumnName="XueYa" />
+                <ScalarProperty Name="MaiBo" ColumnName="MaiBo" />
+                <ScalarProperty Name="QueRenRQ" ColumnName="QueRenRQ" />
+                <ScalarProperty Name="QuerenR" ColumnName="QuerenR" />
+                <ScalarProperty Name="CaoZuoYGH" ColumnName="CaoZuoYGH" />
+                <ScalarProperty Name="CaoZuoYXM" ColumnName="CaoZuoYXM" />
+                <ScalarProperty Name="ShenHeYSGH" ColumnName="ShenHeYSGH" />
+                <ScalarProperty Name="ShenHeYSXM" ColumnName="ShenHeYSXM" />
+                <ScalarProperty Name="LeiBieBM" ColumnName="LeiBieBM" />
+                <ScalarProperty Name="LeiBieMC" ColumnName="LeiBieMC" />
+                <ScalarProperty Name="ZYB_JieGuo" ColumnName="ZYB_JieGuo" />
+                <ScalarProperty Name="ZYB_YiJian" ColumnName="ZYB_YiJian" />
+                <ScalarProperty Name="ZYB_JianYi" ColumnName="ZYB_JianYi" />
+                <ScalarProperty Name="ZYB_DingXing" ColumnName="ZYB_DingXing" />
+                <ScalarProperty Name="ZYB_ZhenDuan" ColumnName="ZYB_ZhenDuan" />
+                <ScalarProperty Name="ShanChuBZ" ColumnName="ShanChuBZ" />
+                <ScalarProperty Name="Image" ColumnName="Image" />
+                <ScalarProperty Name="ClientEdit" ColumnName="ClientEdit" />
+                <ScalarProperty Name="CheckBZ" ColumnName="CheckBZ" />
+                <ScalarProperty Name="SCBH" ColumnName="SCBH" />
+                <ScalarProperty Name="FuJianH" ColumnName="FuJianH" />
+                <ScalarProperty Name="FuJianXM" ColumnName="FuJianXM" />
+                <ScalarProperty Name="renyuanlsh" ColumnName="renyuanlsh" />
+                <ScalarProperty Name="FenPeiBZ" ColumnName="FenPeiBZ" />
+                <ScalarProperty Name="XingMing_ENG" ColumnName="XingMing_ENG" />
+                <ScalarProperty Name="ZhengJianLX" ColumnName="ZhengJianLX" />
+                <ScalarProperty Name="GuoJi" ColumnName="GuoJi" />
+                <ScalarProperty Name="QianWangGJ" ColumnName="QianWangGJ" />
+                <ScalarProperty Name="JieZhongXMJE" ColumnName="JieZhongXMJE" />
+                <ScalarProperty Name="TiJianCS" ColumnName="TiJianCS" />
+                <ScalarProperty Name="JingNW" ColumnName="JingNW" />
+                <ScalarProperty Name="FaZhengJG" ColumnName="FaZhengJG" />
+                <ScalarProperty Name="TiJianJL" ColumnName="TiJianJL" />
+                <ScalarProperty Name="ChuRuJLX" ColumnName="ChuRuJLX" />
+                <ScalarProperty Name="ChuShengD" ColumnName="ChuShengD" />
+                <ScalarProperty Name="TMJCDSFYDY" ColumnName="TMJCDSFYDY" />
+                <ScalarProperty Name="TMJCDDYSJ" ColumnName="TMJCDDYSJ" />
+                <ScalarProperty Name="TMJCDDYRY" ColumnName="TMJCDDYRY" />
+                <ScalarProperty Name="ZYB_QiTaJG" ColumnName="ZYB_QiTaJG" />
+                <ScalarProperty Name="BaoGaoDYCS" ColumnName="BaoGaoDYCS" />
+                <ScalarProperty Name="BaoGaoJJBZ" ColumnName="BaoGaoJJBZ" />
+                <ScalarProperty Name="JiaoJieZT" ColumnName="JiaoJieZT" />
+                <ScalarProperty Name="selfkey" ColumnName="selfkey" />
+                <ScalarProperty Name="ZengJiaZKHJE" ColumnName="ZengJiaZKHJE" />
+                <ScalarProperty Name="ZengJiaJE" ColumnName="ZengJiaJE" />
+                <ScalarProperty Name="TaoCanZKHJE" ColumnName="TaoCanZKHJE" />
+                <ScalarProperty Name="TaoCanZJE" ColumnName="TaoCanZJE" />
+                <ScalarProperty Name="ZuiHouXGRQ" ColumnName="ZuiHouXGRQ" />
+                <ScalarProperty Name="ZuiHouXGGH" ColumnName="ZuiHouXGGH" />
+                <ScalarProperty Name="ZuiHouXGXM" ColumnName="ZuiHouXGXM" />
+                <ScalarProperty Name="SFSFHDY" ColumnName="SFSFHDY" />
+                <ScalarProperty Name="GeRenJSZT" ColumnName="GeRenJSZT" />
+                <ScalarProperty Name="DW_JSZT" ColumnName="DW_JSZT" />
+                <ScalarProperty Name="JieSuanJE_GR" ColumnName="JieSuanJE_GR" />
+                <ScalarProperty Name="JieSuanJE_DW" ColumnName="JieSuanJE_DW" />
+                <ScalarProperty Name="JieSuanBH_GR" ColumnName="JieSuanBH_GR" />
+                <ScalarProperty Name="JieSuanBH_DW" ColumnName="JieSuanBH_DW" />
+                <ScalarProperty Name="TJDYDSFYDY" ColumnName="TJDYDSFYDY" />
+                <ScalarProperty Name="TJDYDDYSJ" ColumnName="TJDYDDYSJ" />
+                <ScalarProperty Name="TJDYDDYRY" ColumnName="TJDYDDYRY" />
+                <ScalarProperty Name="DanWeiDE" ColumnName="DanWeiDE" />
+                <ScalarProperty Name="JieSuanRQ_GR" ColumnName="JieSuanRQ_GR" />
+                <ScalarProperty Name="JieSuanRQ_DW" ColumnName="JieSuanRQ_DW" />
+                <ScalarProperty Name="WFJE_GR" ColumnName="WFJE_GR" />
+                <ScalarProperty Name="WFJE_DW" ColumnName="WFJE_DW" />
+                <ScalarProperty Name="YFJE_GR" ColumnName="YFJE_GR" />
+                <ScalarProperty Name="YFJE_DW" ColumnName="YFJE_DW" />
+                <ScalarProperty Name="LaiJianRQ" ColumnName="LaiJianRQ" />
+                <ScalarProperty Name="BCZFBZ" ColumnName="BCZFBZ" />
+                <ScalarProperty Name="ChoseTJ" ColumnName="ChoseTJ" />
+                <ScalarProperty Name="YangXingBZ" ColumnName="YangXingBZ" />
+                <ScalarProperty Name="teshusx" ColumnName="teshusx" />
+                <ScalarProperty Name="teshubz" ColumnName="teshubz" />
+                <ScalarProperty Name="GRJSJE" ColumnName="GRJSJE" />
+                <ScalarProperty Name="DWJSJE" ColumnName="DWJSJE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
