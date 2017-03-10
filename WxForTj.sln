@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WxForTj", "WxForTj\WxForTj.csproj", "{58B59AEF-460B-420E-98BD-C3DC155CF4B0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F74D2F1E-636A-480F-A660-63304B4D885C} = {F74D2F1E-636A-480F-A660-63304B4D885C}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WxForTj.Tests", "WxForTj.Tests\WxForTj.Tests.csproj", "{A3332BDB-F1A9-4816-99F7-AB007B8B1F60}"
 EndProject
